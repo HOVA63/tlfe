@@ -1,0 +1,130 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header__shell {
+    position: sticky;
+    z-index: 3;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.header__limit {
+    max-width: 95vw;
+    margin-inline: auto;
+    padding-inline: 1rem;
+}
+
+.header__layout {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__layout .site-header__nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 1.5rem;
+}
+
+.site-header__nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.site-header-nav-item {
+    display: flex;
+    align-items: center;
+}
+
+.site-header-nav-links {
+    text-decoration: none;
+    color: #434d5e;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.site-header-nav-links:hover {
+    color: #8200db;
+}
+
+.site-header__nav button {
+    border: none;
+    background-color: #8200db;
+    color: white;
+    font-size: 1.1rem;
+    padding: 0.5rem;
+    padding-inline: 1.2rem;
+    border-radius: 0.5rem;
+}
+
+.site-header__nav button:hover {
+    background-color: #8200db;
+    filter: brightness(70%);
+}
+
+header img {
+    height: 6rem;
+    width: 6rem;
+}
+
+.hero__shell {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/hero-img.jpg') center/cover no-repeat;
+    color: white;
+    padding-block: 5.5rem;
+    height: max-content;
+    width: 100%;
+}
+
+.hero__limit {
+    min-width: auto;
+    padding-inline: 2rem;
+}
+
+.hero__layout {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-tagline {
+    color: #FFB800;
+    font-weight: 600;
+    margin-bottom: -4rem;
+    margin-inline-start: 0.5rem;
+}
+
+.hero__layout h1 {
+    font-size: 6rem;
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+}
+
+.hero__layout h2 {
+    max-width: 50%;
+    margin-top: -3rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.hero__layout button {
+    border: none;
+    background-color: #FFB800;
+    width: fit-content;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 1.3rem;
+    border-radius: 0.8rem;
+}
+
+.hero__layout button:hover {
+    filter: brightness(80%);
+}
