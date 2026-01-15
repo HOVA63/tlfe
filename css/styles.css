@@ -14,7 +14,7 @@ body {
 }
 
 .header__limit {
-    max-width: 95vw;
+    max-width: 90rem;
     margin-inline: auto;
     padding-inline: 1rem;
 }
@@ -85,20 +85,23 @@ header img {
 }
 
 .hero__limit {
-    min-width: auto;
-    padding-inline: 2rem;
+    max-width: 90rem;
+    margin-inline: auto;
+    padding-inline: 1rem;
 }
 
 .hero__layout {
     display: flex;
     flex-direction: column;
+    gap: 0.5rem;
 }
 
 .hero-tagline {
     color: #FFB800;
     font-weight: 600;
-    margin-bottom: -4rem;
     margin-inline-start: 0.5rem;
+    padding: 0;
+    margin: 0;
 }
 
 .hero__layout h1 {
@@ -106,25 +109,99 @@ header img {
     display: flex;
     flex-direction: column;
     line-height: 1;
+    padding: 0;
+    margin: 0;
 }
 
 .hero__layout h2 {
-    max-width: 50%;
-    margin-top: -3rem;
     font-weight: 500;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0;
+    padding-block: 1rem;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
 }
 
 .hero__layout button {
     border: none;
     background-color: #FFB800;
+    color: #2f1828;
     width: fit-content;
     font-size: 1.5rem;
-    font-weight: 500;
+    font-weight: 600;
     padding: 1.3rem;
     border-radius: 0.8rem;
 }
 
 .hero__layout button:hover {
     filter: brightness(80%);
+}
+
+.hero__layout .learn-more {
+    background-color: #8200db;
+    color: white;
+}
+
+.article__shell {
+    height: fit-content;
+    background-color: white;
+}
+
+.article__limit {
+    max-width: 90rem;
+    margin-inline: auto;
+    padding-inline: 1rem;
+}
+
+.article__layout {
+    display: flex;
+    flex-direction: column;
+}
+
+.article__layout h1 {
+    font-size: 4rem;
+}
+
+.article__layout .edu-stats-heading {
+    color: black;
+}
+
+.article__layout .edu-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+
+}
+
+.article__layout .edu-stats .edu-stats-items {
+    flex: 0 1 20rem;
+    min-width: 15rem;
+    background-color: whitesmoke;
+    padding: 3rem;
+    border-radius: 1rem;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.article__layout .edu-stats .edu-stats-items h1 {
+    color: #8200db;
+    font-size: 3.5rem;
+    font-weight: 800;
+    padding: 0rem;
+    margin: 0rem;
+    margin-bottom: 0.5rem;
+}
+
+.article__layout .edu-stats .edu-stats-items p {
+    color: #434d5e;
+    font-size: 1.2rem;
+    padding: 0rem;
+    margin: 0rem;
+    max-width: 20rem;
 }
