@@ -1,7 +1,17 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 .header__shell {
@@ -13,18 +23,13 @@ body {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.header__limit {
-    max-width: 90rem;
-    margin-inline: auto;
-    padding-inline: 1rem;
-}
-
 .header__layout {
     width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    gap: 2rem;
 }
 
 .header__layout .site-header__nav ul {
@@ -50,6 +55,7 @@ body {
     color: #434d5e;
     font-size: 1.1rem;
     font-weight: 600;
+    white-space: nowrap;
 }
 
 .site-header-nav-links:hover {
@@ -72,8 +78,15 @@ body {
 }
 
 header img {
-    height: 6rem;
-    width: 6rem;
+    max-height: 4rem;
+    width: auto;
+}
+
+.limit {
+    max-width: 81.25rem;
+    margin-inline: auto;
+    padding-inline: 2rem;
+    width: 100%;
 }
 
 .hero__shell {
@@ -82,12 +95,6 @@ header img {
     padding-block: 5.5rem;
     height: max-content;
     width: 100%;
-}
-
-.hero__limit {
-    max-width: 90rem;
-    margin-inline: auto;
-    padding-inline: 1rem;
 }
 
 .hero__layout {
@@ -150,15 +157,10 @@ header img {
     background-color: white;
 }
 
-.article__limit {
-    max-width: 90rem;
-    margin-inline: auto;
-    padding-inline: 1rem;
-}
-
 .article__layout {
     display: flex;
     flex-direction: column;
+    gap: 3rem;
 }
 
 .article__layout h1 {
@@ -179,9 +181,9 @@ header img {
 
 .article__layout .edu-stats .edu-stats-items {
     flex: 0 1 20rem;
-    min-width: 15rem;
+    min-width: 10rem;
     background-color: whitesmoke;
-    padding: 3rem;
+    padding: 2rem;
     border-radius: 1rem;
     text-align: left;
     display: flex;
@@ -204,4 +206,70 @@ header img {
     padding: 0rem;
     margin: 0rem;
     max-width: 20rem;
+    overflow-wrap: break-word;
+}
+
+.edu-crisis-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4rem;
+    width: 100%;
+}
+
+.edu-crisis-container img {
+    flex: 1 1 50%;
+    max-width: 50%;
+    height: auto;
+    border-radius: 1rem;
+    object-fit: cover;
+}
+
+.edu-crisis-text {
+    flex: 1 1 50%;
+}
+
+.edu-quote-container {
+    background-color: whitesmoke;
+    padding-inline: 10rem;
+    padding-block: 3rem;
+    border-radius: 1rem;
+}
+
+.edu-quote-container h2 {
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.why-we-exist__shell {
+    background-color: whitesmoke;
+}
+
+.why-we-exist__layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block: 5rem; 
+    max-width: 81.25rem;
+    margin-inline: auto;
+    margin-top: 5rem;
+    padding-inline: 1rem; 
+    width: 100%;
+}
+
+.why-we-exist-header {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    color: #2f1828; 
+}
+
+.why-we-exist-p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 50rem;
+}
+
+.mission-and-vision {
+    display: flex;
 }
