@@ -513,6 +513,29 @@ footer {
     height: auto;
 }
 
+.footer-socials {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.footer-socials a {
+    display: inline-flex;
+    color: inherit; /* matches whatever text color the footer is using */
+    opacity: 0.85;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.footer-socials a:hover {
+    opacity: 1;
+    transform: translateY(-2px);
+}
+
+.footer-socials svg {
+    width: 1.35rem;
+    height: 1.35rem;
+}
+
 .about-footer p {
     color: rgba(255, 255, 255, 0.7);
     line-height: 1.6;
