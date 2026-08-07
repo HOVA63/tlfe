@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/donate.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet"/>
+    <link rel="icon" type="image/jpeg" href="img/tlfe-logo.jpg">
+    <title>Donate — The Luminary Foundation for Education</title>
+  </head>
+  <body class="donate-page">
+    <header class="header__shell">
+      <div class="limit">
+        <div class="header__layout">
+          <a href="index.html"><img src="img/tlfe-logo.jpg" alt="luminary-logo" /></a>
+          <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <nav class="site-header__nav">
+            <ul>
+              <li class="site-header-nav-item">
+                <a href="about_us.html" class="site-header-nav-links">About us</a>
+              </li>
+              <li class="site-header-nav-item">
+                <a href="index.html#our-programs" class="site-header-nav-links">Our Programs</a>
+              </li>
+              <li class="site-header-nav-item">
+                <a href="index.html#get-involved" class="site-header-nav-links">Get Involved</a>
+              </li>
+              <li class="site-header-nav-item">
+                <a href="index.html#site-footer" class="site-header-nav-links">Contact Us</a>
+              </li>
+              <li class="site-header-nav-item">
+                <a href="donate.html" class="site-header-nav-links donate-link" aria-current="page">Donate</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO / GIVING PANEL -->
+      <section class="give__shell">
+        <div class="limit">
+          <div class="give__layout">
+
+            <div class="give-form">
+              <p class="give-eyebrow">Make a donation</p>
+              <h1 class="give-headline">Your money can <br>rewrite a child’s story</h1>
+              <p class="give-subhead">
+                Every amount you give goes directly into changing a life. Through our projects—illumination Beyond Walls and illumination for Excellence—we provide opportunities that ensure no young person's potential goes unrealised.
+              </p>
+
+              <div class="give-frequency" role="radiogroup" aria-label="Donation frequency">
+                <button type="button" class="freq-btn is-active" data-freq="once" role="radio" aria-checked="true">Give once</button>
+                <button type="button" class="freq-btn" data-freq="monthly" role="radio" aria-checked="false">Give monthly</button>
+              </div>
+
+              <div class="give-tiers" role="radiogroup" aria-label="Donation amount">
+                <button type="button" class="tier-btn is-active" data-amount="2500" role="radio" aria-checked="true">
+                  <span class="tier-amount">&#8358;2,500</span>
+                  <span class="tier-label">Friend</span>
+                </button>
+                <button type="button" class="tier-btn" data-amount="10000" role="radio" aria-checked="false">
+                  <span class="tier-amount">&#8358;10,000</span>
+                  <span class="tier-label">Supporter</span>
+                </button>
+                <button type="button" class="tier-btn" data-amount="25000" role="radio" aria-checked="false">
+                  <span class="tier-amount">&#8358;25,000</span>
+                  <span class="tier-label">Champion</span>
+                </button>
+                <button type="button" class="tier-btn" data-amount="100000" role="radio" aria-checked="false">
+                  <span class="tier-amount">&#8358;100,000</span>
+                  <span class="tier-label">Patron</span>
+                </button>
+              </div>
+
+              <label class="give-custom" for="custom-amount">
+                <span>Or enter your own amount</span>
+                <div class="give-custom-input">
+                  <span class="currency-prefix">&#8358;</span>
+                  <input type="number" id="custom-amount" inputmode="numeric" min="100" step="100" placeholder="15,000" />
+                </div>
+              </label>
+
+              <a href="#payment" class="give-cta">
+                Continue to payment &rarr;
+              </a>
+              <p class="give-fineprint">Secure payment · CAC/IT/NO: 7672717 · Cancel a monthly gift anytime</p>
+            </div>
+
+            <div class="receipt-wrap" aria-live="polite">
+              <div class="receipt">
+                <p class="receipt-eyebrow">Your gift</p>
+                <p class="receipt-total-amount" id="receipt-total">&#8358;2,500</p>
+                <p class="receipt-total-label" id="receipt-freq-label">one-time gift</p>
+                <div class="receipt-divider"></div>
+                <p class="receipt-footnote" id="receipt-footnote">
+                  Look at you, changing lives. Thank you.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- TRUST ROW -->
+      <section class="trust__shell">
+        <div class="limit">
+          <div class="trust-row">
+            <div class="trust-item">
+              <span class="trust-figure">Verified</span>
+              <span class="trust-text">The Luminary Foundation for Education is a government-recognised nonprofit, fully registered and approved to operate in Nigeria.</span>
+            </div>
+            <div class="trust-item">
+              <span class="trust-figure">CAC</span>
+              <span class="trust-text">registered nonprofit — CAC/IT/NO: 7672717</span>
+            </div>
+            <div class="trust-item">
+              <span class="trust-figure">Secure</span>
+              <span class="trust-text">Every donation is processed securely. We are committed to full transparency in how your money is managed.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PAYMENT -->
+      <section class="payment__shell" id="payment">
+        <div class="limit">
+          <div class="payment__layout">
+            <div class="payment-intro">
+              <h2>Donate by Bank Transfer</h2>
+              <p>You're giving <strong id="payment-amount-echo">&#8358;2,500</strong> <span id="payment-freq-echo">once</span>. You can change the amount above at any time.</p>
+            </div>
+
+            <div class="payment-panel">
+              <!-- <div class="payment-tabs" role="tablist" aria-label="Payment method">
+                <button type="button" class="pay-tab is-active" data-tab="card" role="tab" aria-selected="true">Debit or credit card</button>
+                <button type="button" class="pay-tab" data-tab="transfer" role="tab" aria-selected="false">Bank transfer</button>
+              </div> -->
+
+              <!-- <div class="payment-view is-active" data-view="card" role="tabpanel">
+                <p class="payment-view-copy">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do
+                  eiusmod tempor incididunt.
+                </p>
+                <button type="button" class="pay-submit" id="card-submit">
+                  Pay <span id="card-amount">&#8358;2,500</span> now &rarr;
+                </button>
+              </div> -->
+
+              <div class="payment-view" data-view="transfer" role="tabpanel">
+                <p class="payment-view-copy">
+                  Once your transfer is done, please send your
+                  receipt to
+                  <a href="mailto:info@luminaryfoundation.org">info@luminaryfoundation.org</a> (+234 705 431 5398) and we'll confirm your donation and also send you a proper thank you.
+                </p>
+                <div class="transfer-card">
+                  <div class="transfer-row">
+                    <span class="transfer-label">Bank</span>
+                    <span class="transfer-value">Stanbic IBTC Bank</span>
+                  </div>
+                  <div class="transfer-row">
+                    <span class="transfer-label">Account name</span>
+                    <span class="transfer-value">The Luminary Foundation for Education</span>
+                  </div>
+                  <div class="transfer-row">
+                    <span class="transfer-label">Account number</span>
+                    <span class="transfer-value transfer-account">
+                      <span id="account-number">0070567442</span>
+                      <button type="button" class="copy-btn" id="copy-account" aria-label="Copy account number">Copy</button>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- QUOTE -->
+      <section class="article__shell">
+        <div class="limit">
+          <div class="edu-quote-container">
+            <h2>
+              "Education isn't about wearing uniforms. It's about becoming
+              better: thinking better, knowing better, and doing better."
+            </h2>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="site-footer">
+      <div class="footer-container">
+        <div class="upper-footer">
+          <div class="about-footer">
+            <div class="footer-logo">
+              <img src="img/tlfe-logo.jpg" alt="TLFE Logo" />
+            </div>
+            <p>
+              Making African youth future-ready by equipping them with the
+              mindset and skills they need to realize their potential, live with
+              purpose, and contribute meaningfully to society.
+            </p>
+            <p class="footer-tagline">YOU CAN AND YOU SHOULD</p>
+            <p class="cac-reg">CAC/IT/NO: 7672717</p>
+          </div>
+
+          <div class="links-footer">
+            <h3>Quick Links</h3>
+            <nav>
+              <a href="about_us.html">About Us</a>
+              <a href="index.html#our-programs">Our Programs</a>
+              <a href="index.html#get-involved">Get Involved</a>
+              <a href="index.html#site-footer">Contact Us</a>
+            </nav>
+          </div>
+
+          <div class="contact-footer">
+            <h3>Contact Us</h3>
+            <div class="contact-info">
+              <span class="contact-label">Email</span>
+              <p>info@luminaryfoundation.org</p>
+
+              <span class="contact-label">Phone</span>
+              <p>+234 (0) 123 456 7890</p>
+
+              <p>Nigeria</p>
+            </div>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="lower-footer">
+          <p>
+            &copy; 2026 The Luminary Foundation for Education. All rights
+            reserved.
+          </p>
+          <div class="legal-links">
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+            <a href="transparency.html">Transparency</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.querySelectorAll('.nav-toggle').forEach((button) => {
+        button.addEventListener('click', () => {
+          const layout = button.closest('.header__layout');
+          const nav = layout.querySelector('.site-header__nav');
+          const isOpen = nav.classList.toggle('is-open');
+          button.setAttribute('aria-expanded', String(isOpen));
+        });
+      });
+    </script>
+
+    <script>
+      (function () {
+        const nf = new Intl.NumberFormat('en-NG');
+        const fmt = (n) => '\u20A6' + nf.format(n);
+
+        const state = { amount: 2500, freq: 'once' };
+
+        const receiptTotal = document.getElementById('receipt-total');
+        const receiptFreqLabel = document.getElementById('receipt-freq-label');
+        const paymentAmountEcho = document.getElementById('payment-amount-echo');
+        const paymentFreqEcho = document.getElementById('payment-freq-echo');
+        // const cardAmount = document.getElementById('card-amount');
+        const customInput = document.getElementById('custom-amount');
+
+        function render() {
+          receiptTotal.textContent = fmt(state.amount);
+          receiptFreqLabel.textContent = state.freq === 'monthly' ? 'every month' : 'one-time gift';
+
+          const freqWord = state.freq === 'monthly' ? 'every month' : 'once';
+          paymentAmountEcho.textContent = fmt(state.amount);
+          paymentFreqEcho.textContent = freqWord;
+          // cardAmount.textContent = fmt(state.amount);
+        }
+
+        document.querySelectorAll('.tier-btn').forEach((btn) => {
+          btn.addEventListener('click', () => {
+            document.querySelectorAll('.tier-btn').forEach((b) => {
+              b.classList.remove('is-active');
+              b.setAttribute('aria-checked', 'false');
+            });
+            btn.classList.add('is-active');
+            btn.setAttribute('aria-checked', 'true');
+            state.amount = Number(btn.dataset.amount);
+            customInput.value = '';
+            render();
+          });
+        });
+
+        document.querySelectorAll('.freq-btn').forEach((btn) => {
+          btn.addEventListener('click', () => {
+            document.querySelectorAll('.freq-btn').forEach((b) => {
+              b.classList.remove('is-active');
+              b.setAttribute('aria-checked', 'false');
+            });
+            btn.classList.add('is-active');
+            btn.setAttribute('aria-checked', 'true');
+            state.freq = btn.dataset.freq;
+            render();
+          });
+        });
+
+        customInput.addEventListener('input', () => {
+          const val = parseInt(customInput.value, 10);
+          if (val && val > 0) {
+            document.querySelectorAll('.tier-btn').forEach((b) => {
+              b.classList.remove('is-active');
+              b.setAttribute('aria-checked', 'false');
+            });
+            state.amount = val;
+            render();
+          }
+        });
+
+        // document.querySelectorAll('.pay-tab').forEach((tab) => {
+        //   tab.addEventListener('click', () => {
+        //     document.querySelectorAll('.pay-tab').forEach((t) => {
+        //       t.classList.remove('is-active');
+        //       t.setAttribute('aria-selected', 'false');
+        //     });
+        //     tab.classList.add('is-active');
+        //     tab.setAttribute('aria-selected', 'true');
+
+        //     const target = tab.dataset.tab;
+        //     document.querySelectorAll('.payment-view').forEach((view) => {
+        //       const match = view.dataset.view === target;
+        //       view.classList.toggle('is-active', match);
+        //       view.hidden = !match;
+        //     });
+        //   });
+        // });
+
+        const copyBtn = document.getElementById('copy-account');
+        if (copyBtn) {
+          copyBtn.addEventListener('click', () => {
+            const number = document.getElementById('account-number').textContent;
+            navigator.clipboard.writeText(number).then(() => {
+              const original = copyBtn.textContent;
+              copyBtn.textContent = 'Copied';
+              setTimeout(() => (copyBtn.textContent = original), 1500);
+            });
+          });
+        }
+
+        render();
+      })();
+    </script>
+  </body>
+</html>

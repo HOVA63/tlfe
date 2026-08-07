@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+    <link rel="icon" type="image/png" href="img/tlfe-logo.jpg">
+    <title>Our Programs — theluminaryfoundationforeducation</title>
+  </head>
+  <body>
+    <header class="header__shell">
+      <div class="limit">
+        <div class="header__layout">
+          <a href="index.html"><img src="img/tlfe-logo.jpg" alt="luminary-logo" /></a>
+          <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <nav class="site-header__nav">
+            <ul>
+              <li class="site-header-nav-item">
+                <a href="about_us.html" class="site-header-nav-links">About us</a>
+              </li>
+              <li class="site-header-nav-item">
+                <a href="programs.html" class="site-header-nav-links">Our Programs</a>
+              </li>
+              <li class="site-header-nav-item">
+                <a href="index.html#get-involved" class="site-header-nav-links">Get Involved</a>
+              </li>
+              <li class="site-header-nav-item">
+                <a href="index.html#site-footer" class="site-header-nav-links">Contact Us</a>
+              </li>
+              <li class="site-header-nav-item">
+                <a href="donate.html" class="site-header-nav-links donate-link">Donate</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="programs-hero__shell">
+        <div class="limit">
+          <div class="programs-hero__layout">
+            <p class="programs-hero-tagline">OUR PROGRAMS</p>
+            <h1>What We're Building For African Youth</h1>
+            <p class="programs-hero-sub">
+              Hover over a program below to see a
+              quick summary — on phone, tap a card instead.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="programs-grid__shell">
+        <div class="limit">
+          <div class="programs-year-group">
+            <h2 class="programs-year-heading">2026</h2>
+            <div class="programs-grid" id="programs-grid-2026"></div>
+          </div>
+          <div class="programs-year-group">
+            <h2 class="programs-year-heading">2025</h2>
+            <div class="programs-grid" id="programs-grid-2025"></div>
+          </div>
+          <div class="programs-year-group">
+            <h2 class="programs-year-heading">2024</h2>
+            <div class="programs-grid" id="programs-grid-2024"></div>
+          </div>
+          <div class="programs-year-group">
+            <h2 class="programs-year-heading">2023</h2>
+            <div class="programs-grid" id="programs-grid-2023"></div>
+          </div>
+          <div class="programs-year-group">
+            <h2 class="programs-year-heading">2022</h2>
+            <div class="programs-grid" id="programs-grid-2022"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+        <footer id="site-footer">
+      <div class="footer-container">
+        <div class="upper-footer">
+          <div class="about-footer">
+            <div class="footer-logo">
+              <img src="img/tlfe-logo.jpg" alt="TLFE Logo" />
+            </div>
+            <p>
+              Making African youth future-ready by equipping them with the
+              mindset and skills they need to realize their potential, live with
+              purpose, and contribute meaningfully to society.
+            </p>
+            <p class="footer-tagline">YOU CAN AND YOU SHOULD</p>
+            <p class="cac-reg">CAC/IT/NO: 7672717</p>
+          </div>
+
+          <div class="links-footer">
+            <h3>Quick Links</h3>
+            <nav>
+              <a href="about_us.html">About Us</a>
+              <a href="index.html#our-programs">Our Programs</a>
+              <a href="index.html#get-involved">Get Involved</a>
+              <a href="index.html#site-footer">Contact Us</a>
+            </nav>
+          </div>
+
+          <div class="contact-footer">
+            <h3>Contact Us</h3>
+            <div class="contact-info">
+              <span class="contact-label">Email</span>
+              <p>theluminaryfoundationforedu@gmail.com</p>
+
+              <span class="contact-label">Phone</span>
+              <p>+234 906 231 8135 <br> Adejumobi Agunloye</p>
+              <p> +234 810 297 5198 <br> Precious Arowosaye</p>
+
+              <p>Nigeria</p>
+            </div>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="lower-footer">
+          <p>
+            &copy; 2026 The Luminary Foundation for Education. All rights
+            reserved.
+          </p>
+          <!-- <div class="legal-links">
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+            <a href="transparency.html">Transparency</a>
+          </div> -->
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Program data: add, remove, or edit entries here — the year field
+      // controls which section (2026 or 2025) a program appears in.
+      const programs = [
+        {
+          image: "https://placehold.co/500x400/8200db/ffffff?text=Program+1",
+          alt: "Illumination Beyond Walls",
+          impactNumber: "IBW '26",
+          impactLabel: "Illumination Beyond Walls",
+          summary: "is a youth empowerment initiative designed to equip Nigerian Jambites with mindset education and practical 21st-century skills. IBW helps students understand that they do not need to wait until university admission to begin building relevant skills, confidence, and career direction.",
+          year: 2026,
+        },
+        {
+          image: "img/photos-for-impact.jpeg",
+          alt: "Photos for Impact",
+          impactNumber: "Photos for Impact",
+          impactLabel: "",
+          summary: "",
+          year: 2026,
+        },
+        {
+          image: "img/step-forward.jpeg",
+          alt: "Step forward",
+          impactNumber: "Step Forward",
+          impactLabel: "",
+          summary: "was a project aimed at creating awareness and sensitising the masses, old and young about sound and quality education in and beyond the walls of a school, its long-term impact and why it can not be negotiated or downplayed",
+          year: 2026,
+        },
+        {
+          image: "img/twp-25.JPG",
+          alt: "TWP '25",
+          impactNumber: "TWP '25",
+          impactLabel: "THE WATERCOLOR PROJECT 2025",
+          summary: "This project was aimed at equipping beneficiaries with 21st century skills while introducing them to digital skills. ",
+          year: 2025,
+        },
+        {
+          image: "img/ife-24.jpg",
+          alt: "IFE '24",
+          impactNumber: "IFE '24",
+          impactLabel: "ILLUMINATION FOR EXCELLENCE 2024",
+          summary: "Illumination for Excellence was a seminar organized at the Odunlade Art Gallery to help the participants understand the importance of a university education and how to create their own success.",
+          year: 2024,
+        },
+        {
+          image: "https://placehold.co/500x400/8200db/ffffff?text=Program+5",
+          alt: "IBW '23",
+          impactNumber: "IBW '23",
+          impactLabel: "ILLUMINATION BEYOND WALLS 2023",
+          summary: "Illumination Beyond Walls was organized to familiarize the young people at Fiditi with basic computer skills whilst preparing them for JAMB success through a JAMB CBT training. ",
+          year: 2023,
+        },
+        {
+          image: "img/b&n-23.JPG",
+          alt: "Program 6",
+          impactNumber: "B&N '23",
+          impactLabel: "BLOSSOM AND NURTURE 2023",
+          summary: "For this project, we spent every Saturday in April 2023 at the Satus Dignus Child Rescue Initiative with the Zahar Foundation, discussing crucial topics like: identity, career development, confidence, mental health, and self care with them.",
+          year: 2023,
+        },
+        {
+          image: "img/twp-22.jpg",
+          alt: "TWP '22",
+          impactNumber: "TWP '22",
+          impactLabel: "people impacted",
+          summary: "The Watercolor Project 2022 was aimed at introducing public secondary school students in Ibadan to digital skills: content creation, digital marketing, and creative writing. ",
+          year: 2022,
+        },
+      ];
+
+      function renderProgramCard(program) {
+        const card = document.createElement("div");
+        card.className = "program-card";
+        card.innerHTML = `
+          <div class="program-image-wrap">
+            <img src="${program.image}" alt="${program.alt}" />
+            <div class="program-stat">
+              <p class="program-stat-number">${program.impactNumber}</p>
+              <p class="program-stat-label">${program.impactLabel}</p>
+            </div>
+            <div class="program-overlay">
+              <p class="program-stat-number">${program.impactNumber}</p>
+              <p class="program-stat-label">${program.impactLabel}</p>
+              <p class="program-overlay-text">${program.summary}</p>
+            </div>
+          </div>
+        `;
+        return card;
+      }
+
+      function renderProgramsForYear(year, containerId) {
+        const container = document.getElementById(containerId);
+        programs
+          .filter((program) => program.year === year)
+          .forEach((program) => container.appendChild(renderProgramCard(program)));
+      }
+
+      renderProgramsForYear(2026, "programs-grid-2026");
+      renderProgramsForYear(2025, "programs-grid-2025");
+      renderProgramsForYear(2024, "programs-grid-2024");
+      renderProgramsForYear(2023, "programs-grid-2023");
+      renderProgramsForYear(2022, "programs-grid-2022");
+
+      document.querySelectorAll('.nav-toggle').forEach((button) => {
+        button.addEventListener('click', () => {
+          const layout = button.closest('.header__layout');
+          const nav = layout.querySelector('.site-header__nav');
+          const isOpen = nav.classList.toggle('is-open');
+          button.setAttribute('aria-expanded', String(isOpen));
+        });
+      });
+
+      // Program card reveal effect: hover on desktop, tap on touch devices.
+      // The rest of the page dims while a card is active, drawing focus to it.
+      const dimOverlay = document.createElement('div');
+      dimOverlay.className = 'page-dim-overlay';
+      document.body.appendChild(dimOverlay);
+
+      const programCards = document.querySelectorAll('.program-card');
+      const isTouchDevice = () => window.matchMedia('(hover: none)').matches;
+
+      function closeAllCards() {
+        programCards.forEach((c) => c.classList.remove('is-active'));
+        document.body.classList.remove('is-dimmed');
+      }
+
+      programCards.forEach((card) => {
+        card.addEventListener('mouseenter', () => {
+          if (isTouchDevice()) return;
+          card.classList.add('is-active');
+          document.body.classList.add('is-dimmed');
+        });
+        card.addEventListener('mouseleave', () => {
+          if (isTouchDevice()) return;
+          card.classList.remove('is-active');
+          document.body.classList.remove('is-dimmed');
+        });
+        card.addEventListener('click', () => {
+          if (!isTouchDevice()) return;
+          const wasActive = card.classList.contains('is-active');
+          closeAllCards();
+          if (!wasActive) {
+            card.classList.add('is-active');
+            document.body.classList.add('is-dimmed');
+          }
+        });
+      });
+
+      dimOverlay.addEventListener('click', closeAllCards);
+    </script>
+  </body>
+</html>

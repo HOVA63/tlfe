@@ -8,41 +8,35 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
-    <link rel="icon" type="image/png" href="img/tlfe-logo.jpg">
+    <link rel="icon" type="image/jpeg" href="img/tlfe-logo.jpg">
     <title>theluminaryfoundationforeducation</title>
   </head>
   <body>
     <header class="header__shell">
       <div class="limit">
         <div class="header__layout">
-          <a href="/"><img src="img/tlfe-logo.jpg" alt="luminary-logo" /></a>
+          <a href="index.html"><img src="img/tlfe-logo.jpg" alt="luminary-logo" /></a>
+          <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
           <nav class="site-header__nav">
             <ul>
               <li class="site-header-nav-item">
-                <a href="about.html" class="site-header-nav-links">About us</a>
+                <a href="about_us.html" class="site-header-nav-links">About us</a>
               </li>
               <li class="site-header-nav-item">
-                <a href="programs.html" class="site-header-nav-links"
-                  >Our Programs</a
-                >
+                <a href="programs.html" class="site-header-nav-links">Our Programs</a>
               </li>
               <li class="site-header-nav-item">
-                <a href="impact.html" class="site-header-nav-links"
-                  >Our Impact</a
-                >
+                <a href="index.html#get-involved" class="site-header-nav-links">Get Involved</a>
               </li>
               <li class="site-header-nav-item">
-                <a href="involved.html" class="site-header-nav-links"
-                  >Get Involved</a
-                >
+                <a href="index.html#site-footer" class="site-header-nav-links">Contact Us</a>
               </li>
               <li class="site-header-nav-item">
-                <a href="contact.html" class="site-header-nav-links"
-                  >Contact Us</a
-                >
-              </li>
-              <li class="site-header-nav-item">
-                <button>Donate</button>
+                <a href="donate.html" class="site-header-nav-links donate-link">Donate</a>
               </li>
             </ul>
           </nav>
@@ -53,7 +47,7 @@
       <section class="hero__shell">
         <div class="limit">
           <div class="hero__layout">
-            <h4 class="hero-tagline">YOU CAN AND YOU SHOULD</h4>
+            <p class="hero-tagline">YOU CAN AND YOU SHOULD</p>
             <h1>
               <span>Making</span>
               <span>African Youths</span>
@@ -65,26 +59,26 @@
             </h2>
             <div class="hero-buttons">
               <button class="support">Support our mission &rarr;</button>
-              <button class="learn-more">See who we are</button>
+              <!-- <button class="learn-more">See who we are</button> -->
             </div>
           </div>
         </div>
       </section>
-      <article class="article__shell">
+      <article class="article__shell" id="our-programs">
         <div class="limit">
           <div class="article__layout">
             <h1 class="edu-stats-heading">The Education Crisis in Nigeria</h1>
             <section class="edu-stats">
               <div class="edu-stats-items">
-                <h1>10.5M</h1>
+                <p class="edu-stat-number">10.5M</p>
                 <p>Children aged 5-15 out of school</p>
               </div>
               <div class="edu-stats-items">
-                <h1>70%</h1>
+                <p class="edu-stat-number">70%</p>
                 <p>Of Nigerian children suffer from learning poverty</p>
               </div>
               <div class="edu-stats-items">
-                <h1>64%</h1>
+                <p class="edu-stat-number">64%</p>
                 <p>Of girls drop out of secondary school</p>
               </div>
             </section>
@@ -203,7 +197,7 @@
           </div>
         </div>
       </section>
-      <section class="get-involved__shell">
+      <section class="get-involved__shell" id="get-involved">
         <div class="limit">
           <div class="get-involved__layout">
             <div class="get-involved-tagline">
@@ -216,27 +210,45 @@
             </div>
             <div class="get-involved-cards">
               <div class="get-involved-card">
-                <div class="gic-icon-box"></div>
+                <div class="gic-icon-box">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="#8200db" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="52" height="52">
+                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                  </svg>
+                </div>
                 <h2>Donate</h2>
                 <p>
                   Your financial contribution helps us provide educational
                   resources and opportunities to children who need them most.
                 </p>
-                <button class="gic-btn">Make a Donation</button>
+                <a href="donate.html" style="text-decoration:none;"><button class="gic-btn">Make a Donation</button></a>
               </div>
 
               <div class="get-involved-card">
-                <div class="gic-icon-box"></div>
+                <div class="gic-icon-box">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="#8200db" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="52" height="52">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                  </svg>
+                </div>
                 <h2>Volunteer</h2>
                 <p>
                   Share your time, skills, and expertise to make a direct impact
                   in students' lives as a tutor, mentor, or program facilitator.
                 </p>
-                <button class="gic-btn">Join Our Team</button>
+                <a href="mailto:info@luminaryfoundation.org?subject=Volunteer Interest" style="text-decoration:none; display:block;">
+                  <button class="gic-btn">Join Our Team</button></a>
               </div>
 
               <div class="get-involved-card">
-                <div class="gic-icon-box"></div>
+                <div class="gic-icon-box">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="#8200db" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="52" height="52">
+                    <path d="M18 20V10"></path>
+                    <path d="M12 20V4"></path>
+                    <path d="M6 20v-6"></path>
+                  </svg>
+                </div>
                 <h2>Partner With Us</h2>
                 <p>
                   Collaborate with us as a sponsor, school, or organization to
@@ -249,7 +261,7 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer id="site-footer">
       <div class="footer-container">
         <div class="upper-footer">
           <div class="about-footer">
@@ -268,10 +280,10 @@
           <div class="links-footer">
             <h3>Quick Links</h3>
             <nav>
-              <a href="about.html">About Us</a>
-              <a href="#focus-areas">Focus Areas</a>
-              <a href="impact.html">Our Impact</a>
-              <a href="involved.html">Get Involved</a>
+              <a href="about_us.html">About Us</a>
+              <a href="index.html#our-programs">Our Programs</a>
+              <a href="index.html#get-involved">Get Involved</a>
+              <a href="index.html#site-footer">Contact Us</a>
             </nav>
           </div>
 
@@ -279,10 +291,11 @@
             <h3>Contact Us</h3>
             <div class="contact-info">
               <span class="contact-label">Email</span>
-              <p>info@luminaryfoundation.org</p>
+              <p>theluminaryfoundationforedu@gmail.com</p>
 
               <span class="contact-label">Phone</span>
-              <p>+234 (0) 123 456 7890</p>
+              <p>+234 906 231 8135 <br> Adejumobi Agunloye</p>
+              <p> +234 810 297 5198 <br> Precious Arowosaye</p>
 
               <p>Nigeria</p>
             </div>
@@ -296,13 +309,23 @@
             &copy; 2026 The Luminary Foundation for Education. All rights
             reserved.
           </p>
-          <div class="legal-links">
+          <!-- <div class="legal-links">
             <a href="privacy-policy.html">Privacy Policy</a>
             <a href="terms.html">Terms of Service</a>
             <a href="transparency.html">Transparency</a>
-          </div>
+          </div> -->
         </div>
       </div>
     </footer>
+    <script>
+      document.querySelectorAll('.nav-toggle').forEach((button) => {
+        button.addEventListener('click', () => {
+          const layout = button.closest('.header__layout');
+          const nav = layout.querySelector('.site-header__nav');
+          const isOpen = nav.classList.toggle('is-open');
+          button.setAttribute('aria-expanded', String(isOpen));
+        });
+      });
+    </script>
   </body>
 </html>
