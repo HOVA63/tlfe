@@ -257,15 +257,14 @@ header img {
 }
 
 .edu-crisis-container img {
-    flex: 1 1 50%;
-    max-width: 50%;
+    width: 50%;
     height: auto;
     border-radius: 1rem;
     object-fit: cover;
 }
 
 .edu-crisis-text {
-    flex: 1 1 50%;
+    width: 50%;
 }
 
 .edu-quote-container {
@@ -661,9 +660,11 @@ hr {
     }
 
     .edu-crisis-container img{
-        max-width: 100%;
+    width: 100%;
+    }
+
+    .edu-crisis-text{
         width: 100%;
-        flex: 1 1 auto;
     }
 
     .edu-quote-container{
