@@ -661,7 +661,9 @@ hr {
     }
 
     .edu-crisis-container img{
-        max-width:100%;
+        max-width: 100%;
+        width: 100%;
+        flex: 1 1 auto;
     }
 
     .edu-quote-container{
