@@ -24,6 +24,9 @@
           <nav class="site-header__nav">
             <ul>
               <li class="site-header-nav-item">
+                <a href="index.html" class="site-header-nav-links">Home</a>
+              </li>
+              <li class="site-header-nav-item">
                 <a href="about_us.html" class="site-header-nav-links">About us</a>
               </li>
               <li class="site-header-nav-item">
@@ -63,21 +66,17 @@
               </div>
 
               <div class="give-tiers" role="radiogroup" aria-label="Donation amount">
-                <button type="button" class="tier-btn is-active" data-amount="2500" role="radio" aria-checked="true">
-                  <span class="tier-amount">&#8358;2,500</span>
-                  <span class="tier-label">Friend</span>
-                </button>
                 <button type="button" class="tier-btn" data-amount="10000" role="radio" aria-checked="false">
                   <span class="tier-amount">&#8358;10,000</span>
-                  <span class="tier-label">Supporter</span>
                 </button>
-                <button type="button" class="tier-btn" data-amount="25000" role="radio" aria-checked="false">
-                  <span class="tier-amount">&#8358;25,000</span>
-                  <span class="tier-label">Champion</span>
+                <button type="button" class="tier-btn is-active" data-amount="50000" role="radio" aria-checked="true">
+                  <span class="tier-amount">&#8358;50,000</span>
                 </button>
                 <button type="button" class="tier-btn" data-amount="100000" role="radio" aria-checked="false">
                   <span class="tier-amount">&#8358;100,000</span>
-                  <span class="tier-label">Patron</span>
+                </button>
+                <button type="button" class="tier-btn" data-amount="1000000" role="radio" aria-checked="false">
+                  <span class="tier-amount">&#8358;1,000,000</span>
                 </button>
               </div>
 
@@ -85,7 +84,7 @@
                 <span>Or enter your own amount</span>
                 <div class="give-custom-input">
                   <span class="currency-prefix">&#8358;</span>
-                  <input type="number" id="custom-amount" inputmode="numeric" min="100" step="100" placeholder="15,000" />
+                  <input type="number" id="custom-amount" inputmode="numeric" min="100" step="100" placeholder="50,000" />
                 </div>
               </label>
 
@@ -98,7 +97,7 @@
             <div class="receipt-wrap" aria-live="polite">
               <div class="receipt">
                 <p class="receipt-eyebrow">Your gift</p>
-                <p class="receipt-total-amount" id="receipt-total">&#8358;2,500</p>
+                <p class="receipt-total-amount" id="receipt-total">&#8358;50,000</p>
                 <p class="receipt-total-label" id="receipt-freq-label">one-time gift</p>
                 <div class="receipt-divider"></div>
                 <p class="receipt-footnote" id="receipt-footnote">
@@ -137,7 +136,7 @@
           <div class="payment__layout">
             <div class="payment-intro">
               <h2>Donate by Bank Transfer</h2>
-              <p>You're giving <strong id="payment-amount-echo">&#8358;2,500</strong> <span id="payment-freq-echo">once</span>. You can change the amount above at any time.</p>
+              <p>You're giving <strong id="payment-amount-echo">&#8358;50,000</strong> <span id="payment-freq-echo">once</span>. You can change the amount above at any time.</p>
             </div>
 
             <div class="payment-panel">
@@ -152,7 +151,7 @@
                   eiusmod tempor incididunt.
                 </p>
                 <button type="button" class="pay-submit" id="card-submit">
-                  Pay <span id="card-amount">&#8358;2,500</span> now &rarr;
+                  Pay <span id="card-amount">&#8358;10,000</span> now &rarr;
                 </button>
               </div> -->
 
@@ -290,7 +289,7 @@
         const nf = new Intl.NumberFormat('en-NG');
         const fmt = (n) => '\u20A6' + nf.format(n);
 
-        const state = { amount: 2500, freq: 'once' };
+        const state = { amount: 50000, freq: 'once' };
 
         const receiptTotal = document.getElementById('receipt-total');
         const receiptFreqLabel = document.getElementById('receipt-freq-label');
