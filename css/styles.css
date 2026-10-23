@@ -1,11 +1,24 @@
+:root {
+    --brand-purple: #613183;
+    --brand-yellow: #F8D456;
+    --brand-white: #FFFFFF;
+    --brand-charcoal: #1F1D1D;
+    --font-primary: "Neue Montreal", "Poppins", sans-serif;
+    --font-secondary: "Poppins", sans-serif;
+}
+
 *, *::before, *::after {
     box-sizing: border-box;
 }
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: var(--font-secondary);
     margin: 0;
     padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-primary);
 }
 
 img {
@@ -47,7 +60,7 @@ img {
     display: block;
     width: 1.5rem;
     height: 2px;
-    background-color: #2f1828;
+    background-color: var(--brand-charcoal);
     border-radius: 999px;
 }
 
@@ -71,19 +84,19 @@ img {
 
 .site-header-nav-links {
     text-decoration: none;
-    color: #434d5e;
+    color: var(--brand-charcoal);
     font-size: 1.1rem;
     font-weight: 600;
     white-space: nowrap;
 }
 
 .site-header-nav-links:hover {
-    color: #8200db;
+    color: var(--brand-purple);
 }
 
 .site-header__nav button {
     border: none;
-    background-color: #8200db;
+    background-color: var(--brand-purple);
     color: white;
     font-size: 1.1rem;
     padding: 0.5rem;
@@ -92,7 +105,7 @@ img {
 }
 
 .site-header__nav button:hover {
-    background-color: #8200db;
+    background-color: var(--brand-purple);
     filter: brightness(70%);
 }
 
@@ -102,7 +115,7 @@ img {
     justify-content: center;
     border-radius: 0.5rem;
     padding: 0.5rem 1.2rem;
-    background-color: #8200db;
+    background-color: var(--brand-purple);
     color: white;
 }
 
@@ -143,7 +156,7 @@ header img {
 }
 
 .hero-tagline {
-    color: #FFB800;
+    color: var(--brand-yellow);
     font-weight: 600;
     margin-inline-start: 0.5rem;
     padding: 0;
@@ -173,8 +186,8 @@ header img {
 
 .hero__layout button {
     border: none;
-    background-color: #FFB800;
-    color: #2f1828;
+    background-color: var(--brand-yellow);
+    color: var(--brand-charcoal);
     width: fit-content;
     font-size: 1.5rem;
     font-weight: 600;
@@ -187,7 +200,7 @@ header img {
 }
 
 .hero__layout .learn-more {
-    background-color: #8200db;
+    background-color: var(--brand-purple);
     color: white;
 }
 
@@ -231,7 +244,7 @@ header img {
 }
 
 .edu-stats-items .edu-stat-number {
-    color: #8200db;
+    color: var(--brand-purple);
     font-size: 3.5rem;
     font-weight: 800;
     padding: 0rem;
@@ -240,7 +253,7 @@ header img {
 }
 
 .edu-stats-items p {
-    color: #434d5e;
+    color: var(--brand-charcoal);
     font-size: 1.2rem;
     padding: 0rem;
     margin: 0rem;
@@ -303,7 +316,7 @@ header img {
 .why-we-exist-header {
     font-size: 3rem;
     margin-bottom: 1.5rem;
-    color: #2f1828; 
+    color: var(--brand-charcoal);
 }
 
 .why-we-exist-p {
@@ -343,7 +356,7 @@ header img {
 
 .mav-text h3 {
     font-size: 1.8rem;
-    color: #2f1828;
+    color: var(--brand-charcoal);
     margin-top: 0;
     margin-bottom: 0.5rem;
 }
@@ -351,11 +364,11 @@ header img {
 .mav-text p {
     font-size: 1.1rem;
     line-height: 1.6;
-    color: #434d5e;
+    color: var(--brand-charcoal);
 }
 
 .commitment_shell {
-    background-color: #8200db;
+    background-color: var(--brand-purple);
     padding: 4rem;
 }
 
@@ -391,7 +404,7 @@ header img {
     margin: 0rem;
 }
 .get-involved-tagline p {
-    color: #434d5e;
+    color: var(--brand-charcoal);
     line-height: 1.5;
     font-size: 1.7rem;
 }
@@ -440,21 +453,21 @@ header img {
     font-size: 2rem;
     font-weight: 800;
     margin-bottom: 0.8rem;
-    color: #0d1b2a;
+    color: var(--brand-charcoal);
     letter-spacing: -0.01em;
 }
 
 .get-involved-card p {
     font-size: 1.1rem;
     line-height: 1.6;
-    color: #434d5e;
+    color: var(--brand-charcoal);
     margin-bottom: 2.5rem;
     flex-grow: 1;
 }
 
 .gic-btn {
     width: 100%;
-    background-color: #8200db;
+    background-color: var(--brand-purple);
     color: white;
     border: none;
     padding: 1rem;
@@ -474,7 +487,7 @@ header img {
 }
 
 footer {
-    background-color: #0d1b2a;
+    background-color: var(--brand-charcoal);
     color: #ffffff;
     padding-block: 5rem 2rem;
     width: 100%;
@@ -547,7 +560,7 @@ footer {
 }
 
 .about-footer .footer-tagline {
-    color: #FFB800;
+    color: var(--brand-yellow);
     font-weight: 800;
     text-transform: uppercase;
     font-size: 0.9rem;
@@ -567,7 +580,7 @@ footer {
     font-size: 1.25rem;
     font-weight: 700;
     margin-bottom: 2rem;
-    color: #FFB800;
+    color: var(--brand-yellow);
 }
 
 .upper-footer a, .contact-info p {
@@ -580,7 +593,7 @@ footer {
 }
 
 .upper-footer a:hover {
-    color: #8200db;
+    color: var(--brand-purple);
 }
 
 .contact-label {
@@ -602,6 +615,17 @@ hr {
     align-items: center;
     font-size: 0.9rem;
     color: rgba(255, 255, 255, 0.6);
+}
+
+.lower-footer a {
+    color: var(--brand-yellow);
+    text-decoration: none;
+}
+
+.lower-footer a:hover,
+.lower-footer a:focus-visible {
+    color: var(--brand-white);
+    text-decoration: underline;
 }
 
 .legal-links {
@@ -807,7 +831,7 @@ hr {
 }
 
 .about-hero-tagline {
-    color: #8200db;
+    color: var(--brand-purple);
     font-weight: 700;
     letter-spacing: 0.05em;
     margin: 0;
@@ -816,13 +840,13 @@ hr {
 .about-hero__layout h1 {
     font-size: 3.5rem;
     margin: 0;
-    color: #0d1b2a;
+    color: var(--brand-charcoal);
     line-height: 1.1;
 }
 
 .about-hero-sub {
     font-size: 1.2rem;
-    color: #434d5e;
+    color: var(--brand-charcoal);
     line-height: 1.6;
     margin: 0;
     margin-top: 0.5rem;
@@ -843,11 +867,11 @@ hr {
 .our-story-heading {
     font-size: 3rem;
     margin-top: 0;
-    color: #0d1b2a;
+    color: var(--brand-charcoal);
 }
 
 .our-story__shell .edu-crisis-text p {
-    color: #434d5e;
+    color: var(--brand-charcoal);
     font-size: 1.1rem;
     line-height: 1.65;
 }
@@ -867,11 +891,11 @@ hr {
 .our-values-heading {
     font-size: 3rem;
     margin: 0;
-    color: #0d1b2a;
+    color: var(--brand-charcoal);
 }
 
 .our-values-sub {
-    color: #434d5e;
+    color: var(--brand-charcoal);
     font-size: 1.2rem;
     margin-top: 0.75rem;
     margin-bottom: 3rem;
@@ -903,12 +927,12 @@ hr {
 
 .value-card h3 {
     font-size: 1.4rem;
-    color: #0d1b2a;
+    color: var(--brand-charcoal);
     margin-bottom: 0.5rem;
 }
 
 .value-card p {
-    color: #434d5e;
+    color: var(--brand-charcoal);
     font-size: 1rem;
     line-height: 1.55;
     margin: 0;
@@ -929,11 +953,11 @@ hr {
 .our-team-heading {
     font-size: 3rem;
     margin: 0;
-    color: #0d1b2a;
+    color: var(--brand-charcoal);
 }
 
 .our-team-sub {
-    color: #434d5e;
+    color: var(--brand-charcoal);
     font-size: 1.2rem;
     margin-top: 0.75rem;
     margin-bottom: 3rem;
@@ -963,12 +987,12 @@ hr {
 
 .team-card h3 {
     font-size: 1.2rem;
-    color: #0d1b2a;
+    color: var(--brand-charcoal);
     margin: 0;
 }
 
 .team-role {
-    color: #8200db;
+    color: var(--brand-purple);
     font-weight: 600;
     font-size: 0.95rem;
     margin: 0.2rem 0 0.6rem;
@@ -1042,7 +1066,7 @@ hr {
 }
 
 .programs-hero-tagline {
-    color: #FFB800;
+    color: var(--brand-yellow);
     font-weight: 700;
     letter-spacing: 0.05em;
     margin: 0;
@@ -1149,10 +1173,10 @@ body.is-dimmed .page-dim-overlay {
 .programs-year-heading {
     font-size: 2rem;
     font-weight: 800;
-    color: #0d1b2a;
+    color: var(--brand-charcoal);
     margin: 0 0 1.5rem;
     padding-bottom: 0.75rem;
-    border-bottom: 3px solid #8200db;
+    border-bottom: 3px solid var(--brand-purple);
 }
 
 .program-overlay {

@@ -1,14 +1,12 @@
 /* ===========================
    DONATE PAGE — design tokens
-   Brand palette: purple #8200db,
-   gold #FFB800, white
 =========================== */
 
 :root {
-    --purple: #8200db;
-    --gold: #FFB800;
-    --white: #ffffff;
-    --ink: #17151c;
+    --purple: var(--brand-purple);
+    --gold: var(--brand-yellow);
+    --white: var(--brand-white);
+    --ink: var(--brand-charcoal);
     --muted: #6b6b74;
     --surface: #f8f8f9;
     --line: rgba(23, 21, 28, 0.12);
@@ -23,7 +21,7 @@
 .receipt-total-amount,
 .tier-amount,
 .trust-figure {
-    font-family: 'Fraunces', 'Inter', serif;
+    font-family: var(--font-primary);
 }
 
 /* ===========================
